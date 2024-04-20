@@ -30,4 +30,3 @@ class Place(BaseModel, Base):
 
     # Establishing relationship with Amenity
     amenities = relationship("Amenity", secondary=place_amenity, viewonly=False)
-
