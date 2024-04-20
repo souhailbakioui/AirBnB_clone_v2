@@ -13,4 +13,3 @@ class Amenity(BaseModel, Base):
 
     # Establishing Many-to-Many relationship with Place
     place_amenities = relationship("Place", secondary="place_amenity")
-
